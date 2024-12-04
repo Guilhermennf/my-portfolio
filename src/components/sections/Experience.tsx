@@ -97,7 +97,7 @@ export const Experience = () => {
                         "https://www.capys.com.br/templates/mossek/images/logo.svg"
                       }
                       alt={`${exp.company}`}
-                      className="w-4 h-4 rounded-full"
+                      className="h-10"
                     />
                   </div>
                   <div className="flex items-center gap-2 text-gray-400 mb-4">
