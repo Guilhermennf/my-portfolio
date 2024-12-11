@@ -114,10 +114,7 @@ export const Experience = () => {
                     <Calendar size={18} />
                     <span>{exp.period}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-gray-400 mb-4">
-                    <Award size={18} />
-                    <span>{exp.company}</span>
-                  </div>
+
                   <p className="text-gray-300 mb-6">{exp.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {exp.skills.map((skill, skillIndex) => (
