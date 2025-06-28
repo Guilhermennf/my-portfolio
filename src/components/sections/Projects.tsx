@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { QrCode, Rocket, Package, Menu } from "lucide-react";
+import { Rocket, Package } from "lucide-react";
 import { ImageCard } from "../ImageCard";
+import BrevBuy from "../../assets/images/lp-brevbuy.png";
 
 export const Projects = () => {
   const [ref, inView] = useInView({
@@ -11,40 +12,7 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Evento Maker",
-      description:
-        "Plataforma de geração de convites personalizados para festas infantis com QR codes automáticos.",
-      icon: <QrCode size={32} />,
-      image:
-        "https://images.unsplash.com/photo-1605098293544-25f4c32344c8?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      features: [
-        "Geração automática de QR codes após pagamento",
-        "Download e envio por e-mail dos convites",
-        "Páginas personalizadas para cada convite",
-        "Sistema integrado de pagamentos",
-      ],
-      status: "Completo",
-      link: "https://eventomaker.com",
-    },
-    {
-      title: "Smart Menu",
-      description:
-        "Plataforma completa para gestão de restaurantes com cardápio digital, controle de pedidos e mesas.",
-      icon: <Menu size={32} />,
-      image:
-        "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      features: [
-        "Cardápios Digitais via QR Code",
-        "Gerenciamento de Pedidos em Tempo Real",
-        "Sistema de Gerenciamento de Mesas",
-        "Dashboard Completo para Restaurantes",
-        "Acompanhamento de Pedidos pelo Cliente",
-      ],
-      status: "Completo",
-      link: "https://smartmenu-lemon.vercel.app/",
-    },
-    {
-      title: "Gestão de Encomendas",
+      title: "Encomenda Facil",
       description:
         "Aplicativo mobile para gestão de encomendas em condomínios.",
       icon: <Package size={32} />,
@@ -56,7 +24,22 @@ export const Projects = () => {
         "Interface intuitiva para porteiros",
         "Sistema de confirmação de recebimento",
       ],
-      status: "Em Desenvolvimento",
+      status: "Completo",
+    },
+    {
+      title: "BrevBuy",
+      description:
+        "Sistema web inteligente para gestão de produtos comprados e revendidos.",
+      icon: <Package size={32} />,
+      image: BrevBuy,
+      features: [
+        "Cadastro manual ou automático de produtos com IA",
+        "Extração de dados via print de comprovante de compra",
+        "Relatórios financeiros de lucro e investimento",
+        "Controle de estoque e status de vendas",
+      ],
+      status: "Completo",
+      link: "https://brevbuy.vercel.app/",
     },
   ];
 
@@ -100,7 +83,7 @@ export const Projects = () => {
                 </div>
                 <p className="text-gray-300 mb-4">{project.description}</p>
                 <ul className="space-y-2 mb-4">
-                  {project.features.map((feature, featureIndex) => (
+                  {project.features?.map((feature, featureIndex) => (
                     <li
                       key={featureIndex}
                       className="flex items-center gap-2 text-gray-400"

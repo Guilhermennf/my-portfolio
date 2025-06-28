@@ -12,8 +12,8 @@ export const Experience = () => {
 
   const experiences = [
     {
-      period: "Outubro 2024 - Presente",
-      role: "Desenvolvedor Frontend Pleno",
+      period: "Abril 2023 - Presente",
+      role: "Desenvolvedor Frontend",
       company: "CAPYS IT SOLUTIONS",
       description:
         "Líder técnico em tarefas de frontend, desenvolvendo interfaces de usuário com JavaScript, React e React Native. Integro e consumo APIs REST, implemento componentes reutilizáveis com React Hooks e Context API. Identifico e corrijo bugs, além de analisar e solucionar exceções em produção.",
@@ -22,22 +22,6 @@ export const Experience = () => {
       skills: [
         "React",
         "React Native",
-        "JavaScript",
-        "TypeScript",
-        "React Hooks",
-        "Context API",
-      ],
-    },
-    {
-      period: "Abril 2023 - Setembro 2024",
-      role: "Desenvolvedor Frontend Junior",
-      company: "CAPYS IT SOLUTIONS",
-      description:
-        "Desenvolvi interfaces de usuário responsivas e eficientes, implementei melhorias contínuas com React e JavaScript. Realizei análise de requisitos, desenvolvi soluções customizadas, e executei testes e depuração de código para garantir alta qualidade.",
-      image:
-        "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?auto=format&fit=crop&w=800&q=80",
-      skills: [
-        "React",
         "JavaScript",
         "TypeScript",
         "React Hooks",
